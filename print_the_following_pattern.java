@@ -3,13 +3,15 @@ class Pattern{
     public static void main(String[] args){
         Scanner in=new Scanner(System.in);
         int n=in.nextInt();
-        int a=64+n;
-        for(int i=a;i>=65;i--){
-            for(int j=65;j<=i;j++){
-                char ch=(char)i;
-                System.out.print(ch+" ");
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n-i;j++){
+                System.out.print(" ");
+            }
+            for(int k=1;k<=i*2-1;k++){
+                System.out.print(i);
             }
             System.out.println();
         }
+        
     }
 }
