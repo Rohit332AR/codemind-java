@@ -1,16 +1,18 @@
-import java.util.*;
+import java.util.Scanner;
 class Pattern{
-    public static void main(String[] args){
-        Scanner in=new Scanner(System.in);
-        int n=in.nextInt();
-        int a=64+n;
-        for(int i=65;i<=a;i++){
-            for(int j=65;j<=a;j++){
-                char c=(char)i; 
-                System.out.printf("%c ",c);
-                
-            }
-            System.out.println();
-        }
-    }
+public static void main(String[] args){
+         Scanner in=new Scanner(System.in);
+          int n=in.nextInt();
+          for(int i=1;i<=n;i++){
+              for(int j=1;j<=n;j++){
+                  if(j==i){
+                      System.out.print("0");
+                  }
+                  else{
+                      System.out.print("x");
+                  }
+              }
+              System.out.println();
+          }
+         }
 }
