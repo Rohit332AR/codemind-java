@@ -1,15 +1,15 @@
-import java.util.Scanner;
-class pattern{
+import java.util.*;
+class Pattern{
     public static void main(String[] args){
         Scanner in=new Scanner(System.in);
         int n=in.nextInt();
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=i;j++){
-               
-                    System.out.printf("%d",j);
+        int a=64+n;
+        for(int i=a;i>=65;i--){
+            for(int j=65;j<=i;j++){
+                char ch=(char)i;
+                System.out.print(ch+" ");
             }
-                    System.out.println();
-                }
-            }
+            System.out.println();
         }
-    
+    }
+}
